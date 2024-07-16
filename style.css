@@ -4,7 +4,6 @@ body {
     width: 100vw;
     grid-template-columns: 1fr 4fr;
     margin: 0px;
-    overflow: hidden;
 }
 
 .sidebar {
@@ -103,4 +102,36 @@ body {
 .content {
     background-color: #e2e8f0;
     grid-row: 2 / 7;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 16px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 16px;
+
+    .project {
+        background-color: white;
+        padding: 1rem;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            overflow: scroll;
+            max-height: 40%;
+        }
+        .icons {
+            display: flex;
+            align-self: flex-end;
+            position: relative;
+            img {
+                height: 2rem;
+                width: auto;
+            }
+        }
+    }
 }
