@@ -1,2 +1,2 @@
 # admin-page
-This project from TheOdinProject curriculum deals entirely with grid layouts. The entire page will be created only by grid elements, no flexbox!
+This project from TheOdinProject curriculum deals (almost) entirely with grid layouts. The entire page will be created with a focus on grid, some implementations of flexbox, and an abundance of relative units. The layout was made with accountance for different device resolutions; it might not look perfect on VERY small screens, but doing so has taught me to always handle any possible implementation of my work.
