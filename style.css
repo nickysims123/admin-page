@@ -4,6 +4,7 @@ body {
     width: 100vw;
     grid-template-columns: 1fr 4fr;
     margin: 0px;
+    overflow: hidden;
 }
 
 .sidebar {
@@ -62,17 +63,40 @@ body {
                 border: 0px;
             }
         }
-        .right-icons {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            margin-right: 2rem;
-            p {
-                margin: 0px;
-                font-weight: 800;
-                font-size: 1.4rem;
-            }
+    }
+    .welcome {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0rem 0rem 2.5rem;
+        img {
+            height: 3rem;
+            width: auto;
         }
+        p {
+            margin: 12px 33vw 12px 12px;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+        button {
+            border: none;
+            border-radius: 30px;
+            background-color: #334155;
+            color: #fafaf9;
+            font-size: 1.2rem;
+            padding: 1rem 1.5rem;
+        }
+    }
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+    p {
+        margin: 0px;
+        font-weight: 800;
+        font-size: 1.4rem;
     }
 }
 
