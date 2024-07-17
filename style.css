@@ -119,19 +119,71 @@ body {
         height: 25vh;
         display: flex;
         flex-direction: column;
+        border-radius: 15px;
+        border-left: 4px solid #4ade80;
 
         p {
             overflow: scroll;
-            max-height: 40%;
+            height: 40%;
         }
         .icons {
             display: flex;
             align-self: flex-end;
-            position: relative;
             img {
                 height: 2rem;
                 width: auto;
             }
         }
     }
+}
+
+.announcements-trending {
+    padding-left: 16px;
+}
+
+.announcements-container {
+    background-color: white;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 32px;
+    border-radius: 15px;
+    
+    .announcement {
+        h4 {
+            margin: 0px;
+        }
+        border-bottom: 2px solid grey;
+        p {
+            margin: 4px 0px 8px 0px;
+        }
+    }
+}
+
+
+
+.trending-container {
+    background-color: white;
+    grid-template-rows: repeat(4, 1fr);
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: 15px;
+    padding: 32px;
+    gap: 8px;
+
+    .trending {
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid grey;
+    }
+    img {
+        height: 2rem;
+        width: auto;
+        margin-right: 1rem;
+    }
+    p {
+        font-size: 1rem;
+        margin-top: 0px;
+    }
+}
+.trending.last, .announcement.last {
+    border-bottom: 0px;
 }
